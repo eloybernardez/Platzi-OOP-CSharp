@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platzi-OOP-CSharp", "Platzi-OOP-CSharp.csproj", "{034BC40D-5F1B-4A86-A684-6B74391DB742}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{034BC40D-5F1B-4A86-A684-6B74391DB742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034BC40D-5F1B-4A86-A684-6B74391DB742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034BC40D-5F1B-4A86-A684-6B74391DB742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034BC40D-5F1B-4A86-A684-6B74391DB742}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {676F63F2-1440-470B-A85B-C3CEEEC3BB5B}
+	EndGlobalSection
+EndGlobal
