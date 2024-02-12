@@ -10,9 +10,10 @@
         // Con abstract se obliga a las clases que hereden de Hero a implementar el método SaveTheDay
         public abstract string SaveTheDay();
         public abstract string HeroName { get; set; }
-        public string SaveTheEarth()
+        // Polimorfismo: usando virtual podemos indicarle a las clases que hereden de Hero que pueden, si lo desean, sobreescribir el método SaveTheEarth
+        public virtual string SaveTheEarth()
         {
-            return "Saving the Earth!";
+            return $"{Name} Saving the Earth!";
         }
     }
 }

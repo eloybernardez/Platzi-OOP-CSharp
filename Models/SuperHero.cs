@@ -38,5 +38,11 @@ namespace Platzi_OOP_CSharp.Models
         {
             return $"{HeroName} is saving the day!";
         }
+
+        public override string SaveTheEarth()
+        {
+            //return base.SaveTheEarth(); // llamar al método de la clase padre
+            return $"{HeroName} is saving the Earth!";
+        }
     }
 }
