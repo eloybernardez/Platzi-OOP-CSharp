@@ -1,29 +1,50 @@
-﻿namespace Platzi_OOP_CSharp.Models
+﻿using System.Text;
+
+namespace Platzi_OOP_CSharp.Models
 {
     public class SuperHero
     {
-        private string _Nombre;
+        private string _Name;
         public int Id = 1;
-        public string Nombre
+        // Encapsulamiento:
+        public string Name
         {
             get
             {
-                return _Nombre;
+                return _Name;
             }
             set
             {
-                _Nombre = value.Trim();
+                _Name = value.Trim();
             }
         }
-        public string IdentidadSecreta;
-        public string Ciudad;
+        public string NameAndSecretIdentity
+        {
+            get
+            {
+                return $"{Name} ({SecretIdentity})";
+            }
+        }
+        private string SecretIdentity;
+        public string City;
         public List<SuperPower> SuperPowers = new List<SuperPower>();
 
-        public SuperHero(string nombre, string identidadSecreta, string ciudad)
+        public SuperHero(string name, string secretIdentity, string city)
         {
-            Nombre = nombre;
-            IdentidadSecreta = identidadSecreta;
-            Ciudad = ciudad;
+            Name = name;
+            SecretIdentity = secretIdentity;
+            City = city;
+        }
+
+        public string UseSuperPowers()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (SuperPower superPower in SuperPowers)
+            {
+                sb.AppendLine($"{NameAndSecretIdentity} is using {superPower.Name}");
+            }
+
+            return sb.ToString();
         }
     }
 }
