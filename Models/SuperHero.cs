@@ -5,7 +5,7 @@ namespace Platzi_OOP_CSharp.Models
     internal class SuperHero : Hero // Herencia
     {
         public int Id = 1;
-        public string HeroName;
+        public override string HeroName { get; set; }
         public string SecretIdentity
         {
             get
