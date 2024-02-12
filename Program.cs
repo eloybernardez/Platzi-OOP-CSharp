@@ -20,3 +20,4 @@ AntiHero wolverine = new AntiHero("Logan", "Wolverine", 45, "Unknown", "Unemploy
 Console.WriteLine(superHero.UseSuperPowers());
 Console.WriteLine(superHero.BasicInformation);
 Console.WriteLine(wolverine.DoesAntiHeroStuff("smoking a cigar"));
+Console.WriteLine(wolverine.SaveTheDay());

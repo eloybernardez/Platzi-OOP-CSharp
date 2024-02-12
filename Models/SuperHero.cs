@@ -2,7 +2,7 @@
 
 namespace Platzi_OOP_CSharp.Models
 {
-    public class SuperHero : Person // Herencia
+    internal class SuperHero : Hero // Herencia
     {
         public int Id = 1;
         public string HeroName;
@@ -32,6 +32,11 @@ namespace Platzi_OOP_CSharp.Models
             }
 
             return sb.ToString();
+        }
+
+        public override string SaveTheDay()
+        {
+            return $"{HeroName} is saving the day!";
         }
     }
 }
